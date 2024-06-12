@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Database</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: left;
+        }
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Database</h1>
+    <table id="user-table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Admin</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Webmaster</td>
+                <td>example@email.com</td>
+                <td>X</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>User123</td>
+                <td>example@email.com</td>
+                <td>-</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Add User</h2>
+    <form id="user-form">
+        <label for="input-username">Username:</label>
+        <input type="text" id="input-username" required>
+        <br>
+        <label for="input-email">Email:</label>
+        <input type="email" id="input-email" required>
+        <br>
+        <label for="input-admin">Admin:</label>
+        <input type="checkbox" id="input-admin">
+        <br>
+        <label for="input-image">Image:</label>
+        <input type="file" id="input-image" accept="image/*">
+        <br>
+        <button type="submit" id="submit-data">Add User</button>
+    </form>
+
+    <button id="empty-table">Empty Table</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
